@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(#47bba2 100%, #000000 50%);
+}
+
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 90vw;
+  max-width: 37.5em;
+  height: 95vh;
+  background-color: #ffffff;
+  padding: 1.8em;
+  border-radius: 0.6em;
+  box-shadow: 0 1em 3em rgba(2, 9, 38, 0.25);
+  overflow: auto;
+}
+
+.main-title {
+  text-align: center;
+  padding-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+  margin-bottom: 1.2em;
+}
+
+.search-container input,
+.search-container button {
+  font-size: 1em;
+  padding: 0.4em 0.2em;
+  border: none;
+  outline: none;
+}
+
+.search-container input {
+  color: #1f194c;
+  border-bottom: 1.5px solid #1f194c;
+}
+
+.search-container input:focus {
+  border-color: #47bba2;
+}
+
+.search-container button {
+  border-radius: 2em;
+  background-color: #47bba2;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search-container button:disabled {
+  background-color: #dcdcdc; /* Cinza claro */
+}
+
+#result {
+  color: #575a7b;
+  line-height: 2em;
+}
+
+#result img {
+  display: block;
+  max-width: 8em;
+  margin: auto;
+}
+
+#result h2 {
+  font-size: 0.95em;
+  margin: 0.8em 0 1.6em 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #1f194c;
+  position: relative;
+}
+
+#result h3 {
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+  color: #1f194c;
+}
+
+#result ul {
+  margin-bottom: 1em;
+  margin-left: 1.8em;
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 0.85em;
+}
+
+#result li {
+  margin-bottom: 0.3em;
+}
+
+#result p {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 0.85em;
+}
+
+#examples-list {
+  padding-top: 2.5em;
+}
+
+#examples-list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  list-style: none;
+}
+
+#examples-list ul li {
+  padding: 1em;
+  text-align: center;
+}
+
+.title-list {
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.msg {
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 14px;
+  }
+}
